@@ -1,0 +1,23 @@
+{
+  "name": "WeatherBot",
+  "description": "Telegram Bot to show weathers all country's",
+  "keywords": [
+    "telegram",
+    "bot",
+    "weathers",
+    "weather"
+  ],
+  "addons": [
+  ],
+  "buildpacks": [
+    {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+    {"url": "heroku/python"}
+],
+"formation": {
+    "worker": {
+        "quantity": 1,
+        "size": "free"
+    }
+},
+  "stack": "heroku-20"
+}
